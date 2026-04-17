@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-oracle-bg: #000000;
+  --color-oracle-glass: rgba(255, 255, 255, 0.05);
+  --color-oracle-glass-active: rgba(255, 255, 255, 0.1);
+  --color-oracle-border: rgba(255, 255, 255, 0.1);
+  --color-oracle-blue: #3b82f6;
+  --color-oracle-purple: #a855f7;
+  --color-oracle-emerald: #10b981;
+  --color-oracle-amber: #f59e0b;
+}
+
+@layer base {
+  body {
+    @apply bg-oracle-bg text-white font-sans overflow-hidden antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
